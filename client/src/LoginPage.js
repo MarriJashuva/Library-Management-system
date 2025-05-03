@@ -17,7 +17,7 @@ const LoginPage = () => {
     setError(""); // Clear previous errors
 
     try {
-      const response = await axios.post("http://localhost:5000/api/login", formData);
+      const response = await axios.post("https://library-management-system-mj2e.onrender.com/api/login", formData);
       
       if (response.status === 200) {
         localStorage.setItem("isLoggedIn", "true");
