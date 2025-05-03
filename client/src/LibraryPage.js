@@ -44,10 +44,10 @@ const LibraryPage = () => {
       });
 
       if (actionType === "read") {
-        window.open(`http://localhost:5000/${selectedBook.filePath}`, "_blank");
+        window.open(`https://library-management-system-mj2e.onrender.com/${selectedBook.filePath}`, "_blank");
       } else {
         const link = document.createElement("a");
-        link.href = `http://localhost:5000/${selectedBook.filePath}`;
+        link.href = `https://library-management-system-mj2e.onrender.com/${selectedBook.filePath}`;
         link.download = selectedBook.title + ".pdf";
         link.click();
       }
@@ -75,7 +75,7 @@ const LibraryPage = () => {
           book.title.toLowerCase().includes(searchTerm.toLowerCase())
         ).map(book => (
           <div className="book-card" key={book._id}>
-            <img src={`http://localhost:5000/${book.coverImagePath}`} alt="Cover" />
+            <img src={`https://library-management-system-mj2e.onrender.com/${book.coverImagePath}`} alt="Cover" />
             <div className="book-details">
               <h4>{book.title}</h4>
               <p><strong>{book.category}</strong></p>
