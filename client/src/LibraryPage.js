@@ -11,7 +11,7 @@ const LibraryPage = () => {
   const [actionType, setActionType] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/books")
+    axios.get("https://library-management-system-mj2e.onrender.com/api/books")
       .then((res) => setBooks(res.data))
       .catch((err) => console.error("Error fetching books:", err));
   }, []);
