@@ -1,0 +1,77 @@
+.admin-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-cover {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #4e73df, #1cc88a);
+  color: white;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 30px;
+}
+
+.admin-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 0 0 12px 12px;
+}
+
+.book-details-box {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.upload-button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #2e59d9;
+}
+
+.file-label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block;
+}
+
+.cover-preview {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.cover-preview img {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+

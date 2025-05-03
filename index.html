@@ -1,0 +1,205 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Library
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Override Tailwind's default focus outline for buttons to match screenshot */
+    button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-black font-sans">
+  <!-- Top bar with "Library" text -->
+  <div class="bg-gray-100 text-gray-300 text-xs px-4 py-1 select-none">
+   Library
+  </div>
+  <!-- Navigation bar -->
+  <nav class="bg-blue-300 flex items-center justify-between px-4 py-3 max-w-5xl mx-auto">
+   <div class="text-white text-lg font-normal">
+    LOGO
+   </div>
+   <ul class="hidden sm:flex space-x-6 text-white text-sm font-normal">
+    <li>
+     <a class="hover:underline" href="#">
+      Home
+     </a>
+    </li>
+    <li>
+     <a class="hover:underline" href="#">
+      Library
+     </a>
+    </li>
+    <li>
+     <a class="hover:underline" href="#">
+      About Us
+     </a>
+    </li>
+    <li>
+     <a class="hover:underline" href="#">
+      Contact
+     </a>
+    </li>
+   </ul>
+   <div class="flex space-x-2">
+    <button class="bg-lime-500 text-white text-xs font-normal rounded px-3 py-1 leading-5" type="button">
+     Login
+    </button>
+    <button class="bg-blue-900 text-white text-xs font-normal rounded px-3 py-1 leading-5" type="button">
+     SignUp
+    </button>
+   </div>
+  </nav>
+  <!-- Main content container -->
+  <main class="max-w-5xl mx-auto px-4 py-6">
+   <!-- Search refine header with icon -->
+   <div class="flex items-center space-x-2 mb-4">
+    <i class="fas fa-search text-base">
+    </i>
+    <h2 class="font-semibold text-base leading-5">
+     Refine Your Search
+    </h2>
+   </div>
+   <!-- Filter by category and apply button -->
+   <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4 mb-6">
+    <div class="text-[9px] font-normal text-black mb-2 sm:mb-0">
+     <span class="font-semibold">
+      Filter by Category
+     </span>
+     <div class="inline-flex space-x-1 mt-1">
+      <button class="text-[9px] font-normal text-black border border-gray-300 rounded px-1.5 py-[1px]" type="button">
+       Books
+      </button>
+      <button class="text-[9px] font-normal text-black border border-gray-300 rounded px-1.5 py-[1px]" type="button">
+       Research Papers
+      </button>
+      <button class="text-[9px] font-normal text-black border border-gray-300 rounded px-1.5 py-[1px]" type="button">
+       Journals
+      </button>
+      <button class="text-[9px] font-normal text-black border border-gray-300 rounded px-1.5 py-[1px]" type="button">
+       All
+      </button>
+     </div>
+    </div>
+    <button class="bg-blue-500 text-white text-xs font-normal rounded px-3 py-1 leading-5 self-start sm:self-auto" type="button">
+     Apply Filters
+    </button>
+   </div>
+   <!-- Books grid -->
+   <div class="grid grid-cols-1 sm:grid-cols-3 gap-x-6 gap-y-6 max-w-3xl mx-auto">
+    <!-- Book 1 -->
+    <div class="border border-gray-200">
+     <img alt="Book cover: A Companion to Astronomy and Astrophysics with a starry nebula image" class="w-full" height="200" src="https://storage.googleapis.com/a1aa/image/b4cf37d2-dd54-4f94-73ee-31cb7a987f2e.jpg" width="150"/>
+     <div class="px-2 py-1 text-[10px] font-normal text-gray-700">
+      Physics &amp; Astronomy
+     </div>
+     <div class="px-2 pb-2 text-[10px] font-semibold text-black">
+      Stephen Hawking
+     </div>
+    </div>
+    <!-- Book 2 -->
+    <div class="border border-gray-200">
+     <img alt="Book cover: Number Theory-I with yellow background and math formulas" class="w-full" height="200" src="https://storage.googleapis.com/a1aa/image/002bab45-2dee-4baf-b370-aeaa78c9a100.jpg" width="150"/>
+     <div class="px-2 py-1 text-[10px] font-normal text-gray-700">
+      Algebra &amp; Number Theory
+     </div>
+     <div class="px-2 pb-2 text-[10px] font-semibold text-black">
+      Leonhard Euler
+     </div>
+    </div>
+    <!-- Book 3 -->
+    <div class="border border-gray-200">
+     <img alt="Book cover: AI and ML Powering the Agents of Automation with white, red, and blue design" class="w-full" height="200" src="https://storage.googleapis.com/a1aa/image/2734665c-559d-4256-46a4-b823952bdc93.jpg" width="150"/>
+     <div class="px-2 py-1 text-[10px] font-normal text-gray-700">
+      Artificial Intelligence &amp; Machine Learning
+     </div>
+     <div class="px-2 pb-2 text-[10px] font-semibold text-black">
+      Judea Pearl
+     </div>
+    </div>
+    <!-- Book 4 -->
+    <div class="border border-gray-200">
+     <img alt="Book cover: Life The Science of Biology with lions on a plain" class="w-full" height="200" src="https://storage.googleapis.com/a1aa/image/78455a45-6acf-4a61-3307-b00d7fea9646.jpg" width="150"/>
+     <div class="px-2 py-1 text-[10px] font-normal text-gray-700">
+      Biology &amp; Life Sciences
+     </div>
+     <div class="px-2 pb-2 text-[10px] font-semibold text-black">
+      Charles Darwin
+     </div>
+    </div>
+    <!-- Book 5 -->
+    <div class="border border-gray-200">
+     <img alt="Book cover: Geometry and Topology with abstract shapes on beige background" class="w-full" height="200" src="https://storage.googleapis.com/a1aa/image/365dccc6-dfed-4d77-92ac-9186bc156287.jpg" width="150"/>
+     <div class="px-2 py-1 text-[10px] font-normal text-gray-700">
+      Geometry &amp; Topology
+     </div>
+     <div class="px-2 pb-2 text-[10px] font-semibold text-black">
+      Euclid
+     </div>
+    </div>
+    <!-- Book 6 -->
+    <div class="border border-gray-200">
+     <img alt="Book cover: The Complete Software Developer's Career Guide with black and orange text" class="w-full" height="200" src="https://storage.googleapis.com/a1aa/image/a24488a7-3f88-430a-6f01-abf5f9d4d1d8.jpg" width="150"/>
+     <div class="px-2 py-1 text-[10px] font-normal text-gray-700">
+      Software Development &amp; Programming
+     </div>
+     <div class="px-2 pb-2 text-[10px] font-semibold text-black">
+      Donald Knuth
+     </div>
+    </div>
+    <!-- Book 7 -->
+    <div class="border border-gray-200">
+     <img alt="Book cover: Selenium and Tellurium Reagents with Earth image on black background" class="w-full" height="200" src="https://storage.googleapis.com/a1aa/image/390f34d9-e0b5-4d17-e694-f328e22c6328.jpg" width="150"/>
+     <div class="px-2 py-1 text-[10px] font-normal text-gray-700">
+      Chemistry &amp; Materials Science
+     </div>
+     <div class="px-2 pb-2 text-[10px] font-semibold text-black">
+      Stephen Hawking
+     </div>
+    </div>
+    <!-- Book 8 -->
+    <div class="border border-gray-200">
+     <img alt="Book cover: Introduction to Calculus and Analysis 1 with yellow blocks" class="w-full" height="200" src="https://storage.googleapis.com/a1aa/image/e62ea35e-5916-4286-4ab1-4d54de79b935.jpg" width="150"/>
+     <div class="px-2 py-1 text-[10px] font-normal text-gray-700">
+      Calculus &amp; Analysis
+     </div>
+     <div class="px-2 pb-2 text-[10px] font-semibold text-black">
+      Leonhard Euler
+     </div>
+    </div>
+    <!-- Book 9 -->
+    <div class="border border-gray-200">
+     <img alt="Book cover: Technology Basics Blockchain cryptography and cybersecurity with green cover" class="w-full" height="200" src="https://storage.googleapis.com/a1aa/image/536e7e90-517f-45a0-7130-8bdfae23c2d7.jpg" width="150"/>
+     <div class="px-2 py-1 text-[10px] font-normal text-gray-700">
+      Blockchain &amp; Cryptography
+     </div>
+     <div class="px-2 pb-2 text-[10px] font-semibold text-black">
+      Judea Pearl
+     </div>
+    </div>
+   </div>
+  </main>
+  <!-- Footer navigation -->
+  <footer class="max-w-5xl mx-auto px-4 py-4 flex justify-between text-[9px] font-normal text-black select-none">
+   <div>
+    Home
+   </div>
+   <div>
+    Library
+   </div>
+   <div>
+    About Us
+   </div>
+   <div>
+    Contact Us
+   </div>
+  </footer>
+ </body>
+</html>

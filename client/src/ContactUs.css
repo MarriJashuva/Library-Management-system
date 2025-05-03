@@ -1,0 +1,46 @@
+.contact-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #218838;
+  }
+  
+  .success-msg {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+  }
+  
