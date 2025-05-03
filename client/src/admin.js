@@ -31,7 +31,7 @@ const Admin = () => {
     formData.append("coverImage", coverImage); // ✅ sending cover image
 
     try {
-      await axios.post("http://localhost:5000/api/books", formData);
+      await axios.post("https://library-management-system-mj2e.onrender.com/api/books", formData);
       alert("Book uploaded successfully!");
     } catch (err) {
       console.error(err);
