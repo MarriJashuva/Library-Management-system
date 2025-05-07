@@ -18,7 +18,7 @@ const ContactUs = () => {
     }
 
     try {
-      await axios.post("https://library-management-system-mj2e.onrender.com/api/contact", formData);
+      await axios.post("https://library-management-system-v5vr.onrender.com/api/contact", formData);
       setSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
     } catch (err) {
