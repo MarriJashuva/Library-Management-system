@@ -11,7 +11,7 @@ const LibraryPage = () => {
   const [actionType, setActionType] = useState("");
 
   useEffect(() => {
-    axios.get("https://library-management-system-mj2e.onrender.com/api/books")
+    axios.get("https://library-management-system-v5vr.onrender.com/api/books")
       .then((res) => setBooks(res.data))
       .catch((err) => console.error("Error fetching books:", err));
   }, []);
@@ -36,7 +36,7 @@ const LibraryPage = () => {
     }
 
     try {
-      await axios.post("https://library-management-system-mj2e.onrender.com/api/track-access", {
+      await axios.post("https://library-management-system-v5vr.onrender.com/api/track-access", {
         name: userInfo.name,
         email: userInfo.email,
         bookTitle: selectedBook.title,
@@ -44,10 +44,10 @@ const LibraryPage = () => {
       });
 
       if (actionType === "read") {
-        window.open(`https://library-management-system-mj2e.onrender.com/${selectedBook.filePath}`, "_blank");
+        window.open(`https://library-management-system-v5vr.onrender.com/${selectedBook.filePath}`, "_blank");
       } else {
         const link = document.createElement("a");
-        link.href = `https://library-management-system-mj2e.onrender.com/${selectedBook.filePath}`;
+        link.href = `https://library-management-system-v5vr.onrender.com/${selectedBook.filePath}`;
         link.download = selectedBook.title + ".pdf";
         link.click();
       }
@@ -75,7 +75,7 @@ const LibraryPage = () => {
           book.title.toLowerCase().includes(searchTerm.toLowerCase())
         ).map(book => (
           <div className="book-card" key={book._id}>
-            <img src={`https://library-management-system-mj2e.onrender.com/${book.coverImagePath}`} alt="Cover" />
+            <img src={`https://library-management-system-v5vr.onrender.com/${book.coverImagePath}`} alt="Cover" />
             <div className="book-details">
               <h4>{book.title}</h4>
               <p><strong>{book.category}</strong></p>
